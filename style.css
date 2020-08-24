@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+.draggable-list {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid lightgrey;
+}
+.draggable-list li {
+  display: flex;
+}
+.draggable-list li:not(:last-of-type) {
+  border-bottom: 1px solid lightgrey;
+}
+.draggable-list li .number {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  background: lightgrey;
+  justify-content: center;
+  align-items: center;
+}
+.draggable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
