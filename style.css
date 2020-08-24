@@ -12,8 +12,10 @@ body {
   list-style-type: none;
   padding: 0;
   border: 1px solid lightgrey;
+  color: #34444f;
 }
 .draggable-list li {
+  background-color: #fff;
   display: flex;
 }
 .draggable-list li:not(:last-of-type) {
@@ -26,9 +28,49 @@ body {
   background: lightgrey;
   justify-content: center;
   align-items: center;
+  font-size: 28px;
+  border: 1px solid #fff;
 }
+
 .draggable {
+  cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  flex: 1;
+}
+.draggable-list li.over .draggable {
+  background-color: #eaeaea;
+}
+.draggable-list .person-name {
+  margin: 0 20px 0 0;
+}
+.draggable-list li.right .person-name {
+  color: #3ae374;
+}
+
+.draggable-list li.wrong .person-name {
+  color: #ff3838;
+}
+.check-btn {
+  border: none;
+  background: lightgrey;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.check-btn:active {
+  transform: scale(0.98);
+}
+
+.check-btn:focus {
+  outline: none;
+}
+.richest-People {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
