@@ -1,6 +1,6 @@
 const draggable_list = document.getElementById("draggable-list");
 const check = document.getElementById("check");
-const richest_People = document.getElementById("richest-People");
+
 
 const richestPeople = [
   "Jeff Bezos",
